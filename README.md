@@ -1,10 +1,10 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<img src="../readme_files/wireframe.png" style="margin: 0;">
 
 Welcome kervo,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
-## Gitpod Reminders
+## The Paw Society - Django fullstack project
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
