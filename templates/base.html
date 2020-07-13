@@ -40,17 +40,64 @@
   <body>
     <header class="container-fluid fixed-top">
       <div class="row">
-        <dv
-          class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left"
-        >
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
-            <h2 class="logo-font text-black my-0">
-              <strong>The Paw Society</strong>
+            <h2 class="logo-font text-black my-0">The
+              <strong> Paw </strong>Society
             </h2>
           </a>
-        </dv>
-        <dv class="col-12"></dv>
-        <dv class="col-12"></dv>
+        </div>
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <form method="GET" action="">
+                <div class="input-group w-100">
+                <!-- name q is for query  -->
+                    <input type="text" name="q" class="form-control border border-black rounded-0" placeholder="Search our services!">
+                    <div class="input-group-append">
+                        <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <span class="icon"><i class="fas fa-search"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                <li class="list-inline-item dropdown">
+                    <a href="#" class="text-black nav-link" id="user-page" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="text-center">
+                        <div><i class="fas fa-user fa-lg"></i></div>
+                        <p class="my-0">Paw profile</p>
+                    </div>
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="user-page">
+                        {% if request.user.is_authenticated %}
+                           {% if request.user.is_superuser %}
+                           <a href="" class="dropdown-item">Paw Management</a>
+                           {% endif %}
+                           <a href="#" class="dropdown-item">Your Paw Profile</a>
+                           <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                           {% else %}
+                           <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+                           <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                        {% endif %}
+                    </div>
+                </li>
+                <li class="list-inline-item">
+                <a href="#" class="{% if grand_total %}text-info font-weight-bold{% endif %} nav-link">
+                <div class="text-center">
+                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <p class="my-0">
+                {% if grand_total %}
+                    €{{ grand_total|floatformat:2 }}
+                {% else %}
+                    €0.00
+                   {% endif %} 
+                </p>
+                </div>
+                </a>
+                </li>
+            </ul>
+        </div>
       </div>
     </header>
 
