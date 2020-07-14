@@ -1,4 +1,4 @@
-<img src="/readme_files/wireframe.png" style="margin: 0;">
+![The Paw Society](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 Welcome to the Paw society,
 
