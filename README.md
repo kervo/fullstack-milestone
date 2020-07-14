@@ -1,4 +1,4 @@
-![The Paw Society](https://github.com/kervo/fullstack-milestone/redme_files/wireframe.png "Wireframe")
+![The Paw Society](https://github.com/kervo/fullstack-milestone/blob/master/redme_files/wireframe.png "Wireframe")
 
 Welcome to the Paw society,
 
