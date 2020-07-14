@@ -1,4 +1,4 @@
-<img src="../readme_files/wireframe.png" style="margin: 0;">
+<img src="/readme_files/wireframe.png" style="margin: 0;">
 
 Welcome to the Paw society,
 
