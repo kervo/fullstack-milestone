@@ -8,7 +8,7 @@
       "description": "Treat Dispensing Toy features patented openings at either end of the toy. Each opening contains inner-facing, soft and flexible prongs that allow kibble or treats to be stuffed inside the toy.",
       "price": 8.99,
       "category": 1,
-      "image_url": "https://github.com/kervo/fullstack-milestone/blob/master/media/buddy-waggle.jpg",
+      "image_url": "/media/buddy-waggle.jpg",
       "image": "buddy-waggle.jpg"
     }
   }
