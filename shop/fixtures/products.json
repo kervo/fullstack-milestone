@@ -11,5 +11,31 @@
       "image_url": "/media/buddy-waggle.jpg",
       "image": "buddy-waggle.jpg"
     }
+  },
+  {
+    "pk": 2,
+    "model": "shop.product",
+    "fields": {
+      "sku": "pp5001600425",
+      "name": "Elephunk",
+      "description": "These Busy Buddytoys are designed for longer lasting playtime! Each one is made with a different and unique chewing experience in mind and helps redirect potentially destructive chewing behaviour into positive playtime.",
+      "price": 4.00,
+      "category": 1,
+      "image_url": "/media/elephunk.jpg",
+      "image": "elephunk.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "shop.product",
+    "fields": {
+      "sku": "pp5001730010",
+      "name": "Marrow Bone",
+      "description": "Marron Bone is a durable interactive dog bone that provides hours of enjoyment and chewing satisfaction. It is ideal for strong chewers and features an irresistible jerky flavour down the middle.",
+      "price": 7.50,
+      "category": 1,
+      "image_url": "/media/marrowbone.jpg",
+      "image": "marrowbone.jpg"
+    }
   }
 ]

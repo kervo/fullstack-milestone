@@ -16,6 +16,7 @@ Offers banner gives the opportunity to catch the user's attention with an attrac
 * remote: error: File core.Microsoft.Pytho.3919.1594814483 is 225.15 MB; this exceeds GitHub's file size limit of 100.00 MB
 I'm leaving a note here in case I get the same error. type this on the CLI `git filter-branch --tree-filter 'rm -f core.Microsoft*' HEAD` and add this file toi your .gitignore file `core.Microsoft* `
 
+* Products not showing on Shop page: When I set up my JSON files, I did it with one entry only and after I added the rest of files but it wasn't showing on my Shop page. The solution was to load the data again with `python3 manage.py loaddata products.json`.
 
 * Photos: Pexel, Homepage: Photo by Helena Lopes from Pexels
 
