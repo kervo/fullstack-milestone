@@ -1,15 +1,13 @@
 from django.shortcuts import render
 from .models import Product
 
-# Create your views here.
 
 def all_products(request):
-    """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
 
     context = {
         'products': products,
     }
-
+    """ call the folder from shop > templates > ... """
     return render(request, 'products/products.html', context)
