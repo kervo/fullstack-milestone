@@ -1,55 +1,35 @@
 [
   {
     "pk": 1,
-<<<<<<< HEAD
     "model": "shop.category",
-=======
-    "model": "products.category",
->>>>>>> a8d26ed207402f1309652bd447c1945304a3f539
     "fields": {
       "name": "toys",
       "friendly_name": "Toys"
     }},
     {
     "pk": 2,
-<<<<<<< HEAD
     "model": "shop.category",
-=======
-    "model": "products.category",
->>>>>>> a8d26ed207402f1309652bd447c1945304a3f539
     "fields": {
       "name": "treats",
       "friendly_name": "Food Treats"
     }},
     {
     "pk": 3,
-<<<<<<< HEAD
     "model": "shop.category",
-=======
-    "model": "products.category",
->>>>>>> a8d26ed207402f1309652bd447c1945304a3f539
     "fields": {
       "name": "hygiene",
       "friendly_name": "Hygiene"
     }},
     {
     "pk": 4,
-<<<<<<< HEAD
     "model": "shop.category",
-=======
-    "model": "products.category",
->>>>>>> a8d26ed207402f1309652bd447c1945304a3f539
     "fields": {
       "name": "paw_products",
       "friendly_name": "The Paw Clothing"
     }},
     {
     "pk": 5,
-<<<<<<< HEAD
     "model": "shop.category",
-=======
-    "model": "products.category",
->>>>>>> a8d26ed207402f1309652bd447c1945304a3f539
     "fields": {
       "name": "offers",
       "friendly_name": "Offers"
