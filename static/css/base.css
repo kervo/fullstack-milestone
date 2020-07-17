@@ -93,3 +93,14 @@ body {
         padding-top: 164px;
     }
 }
+
+/* fixed top of products and single_products */
+@media (max-width: 992px) {
+    .header-container {
+        padding-top: 110px;
+    }
+
+    body {
+        height: calc(80vh - 110px);
+    }
+}

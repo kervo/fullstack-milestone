@@ -18,7 +18,7 @@ I'm leaving a note here in case I get the same error. type this on the CLI `git 
 
 * Products not showing on Shop page: When I set up my JSON files, I did it with one entry only and after I added the rest of files but it wasn't showing on my Shop page. The solution was to load the data again with `python3 manage.py loaddata products.json`.
 
-* TemplateSyntaxError("Could not parse the remainder: '%s' " django.template.exceptions.TemplateSyntaxError: Could not parse the remainder
+* TemplateSyntaxError("Could not parse the remainder: '%s' " django.template.exceptions.TemplateSyntaxError: Could not parse the remainder...
 Solution: I was using `{{ url 'product_detail' product.id }}` instead of `{% url 'product_detail' product.id %}` to link pages.
 
 
