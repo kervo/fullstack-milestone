@@ -9,7 +9,9 @@ This is the Code Institute student template for Gitpod to present my final proje
 
 # UX-Desing
 
-Offers banner gives the opportunity to catch the user's attention with an attractive service deal
+Offers banner gives the opportunity to catch the user's attention with an attractive service deal.
+
+The main colour to give contrast to the site is `#B05D44` as in the company's logo. 
 
 # Testing
 

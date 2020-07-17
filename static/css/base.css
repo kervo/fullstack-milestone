@@ -28,7 +28,7 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #B05D44;
     color: white;
     min-width: 260px;
 }
@@ -99,7 +99,7 @@ body {
     .header-container {
         padding-top: 110px;
     }
-
+    /* 80vh calculation based on this answer https://stackoverflow.com/questions/29211998/make-div-max-height-equal-to-window-height-100px  */
     body {
         height: calc(80vh - 110px);
     }
