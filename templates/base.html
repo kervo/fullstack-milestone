@@ -37,7 +37,8 @@
           </a>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <form method="GET" action="">
+            <!-- url for html file and no shop app  -->
+            <form method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
                 <!-- name q is for query  -->
                     <input type="text" name="q" class="form-control border border-black rounded-0" placeholder="Search our services!">
