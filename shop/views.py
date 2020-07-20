@@ -7,6 +7,7 @@ from .models import Product
 def all_products(request):
 
     products = Product.objects.all()
+    query = None
 
     if request.GET:
         if 'q' in request.GET:
@@ -14,7 +15,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "Not sure? Try training toys")
                 return redirect(reverse('products'))
-            """ icontains/idescription makes the search ignore case insensitive """
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 

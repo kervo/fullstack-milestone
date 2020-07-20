@@ -23,6 +23,8 @@ I'm leaving a note here in case I get the same error. type this on the CLI `git 
 * TemplateSyntaxError("Could not parse the remainder: '%s' " django.template.exceptions.TemplateSyntaxError: Could not parse the remainder...
 Solution: I was using `{{ url 'product_detail' product.id }}` instead of `{% url 'product_detail' product.id %}` to link pages.
 
+* UnboundLocalError: local variable 'query' referenced before assignment. I was getting this error on my shop section because I wasn't declaring the value of `query` before the `if` statement.
+
 
 # References
 * Photos: Pexel, Homepage: Photo by Helena Lopes from Pexels

@@ -37,5 +37,96 @@
       "image_url": "/media/marrowbone.jpg",
       "image": "marrowbone.jpg"
     }
+  },
+  {
+    "pk": 4,
+    "model": "shop.product",
+    "fields": {
+      "sku": "pp5001730012",
+      "name": "Shareables Jerky",
+      "description": "The perfect treat for your dog (and cats too!). That’s because rabbit meat is a “smart” hypoallergenic, high-protein and low-fat novel protein choice for your pet.",
+      "price": 4.95,
+      "category": 2,
+      "image_url": "/media/shareables.jpg",
+      "image": "shareables.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "shop.product",
+    "fields": {
+      "sku": "pp5001730024",
+      "name": "Core Treat",
+      "description": "Core are tender, meaty, free of preservatives & contain no wheat, corn, added animal fat, artificial colors or flavours.",
+      "price": 5.75,
+      "category": 2,
+      "image_url": "/media/core.jpg",
+      "image": "core.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "shop.product",
+    "fields": {
+      "sku": "pp5001730048",
+      "name": "BioActive Dental Chews",
+      "description": "Fresh Mouth Dental Chews made with organic Icelandic sea kelp with bacteriostatic properties that works with saliva to fight plaque.",
+      "price": 11.40,
+      "category": 3,
+      "image_url": "/media/bioactive.jpg",
+      "image": "bioactive.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "shop.product",
+    "fields": {
+      "sku": "pp5001730096",
+      "name": "Skinny Bakes",
+      "description": "Daily support for healthy hip and joints with functional ingredients: Glucosamine, Chondroitin, Turmeric.",
+      "price": 3.20,
+      "category": 3,
+      "image_url": "/media/skinny.jpg",
+      "image": "skinny.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "shop.product",
+    "fields": {
+      "sku": "pp5001730192",
+      "name": "Train Me!",
+      "description": "Healthy Omega Treats allow your pet to indulge in a five layer treat that is packed with omega-3.",
+      "price": 5.80,
+      "category": 2,
+      "image_url": "/media/train-treat.jpg",
+      "image": "train-treat.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "shop.product",
+    "fields": {
+      "sku": "pp5001730384",
+      "name": "Multi Purpose Harness",
+      "description": "This harness comes equipped with a removable chestplate, optional removable/interchangable side patches (sold separately).",
+      "price": 25.40,
+      "category": 4,
+      "image_url": "/media/paw-harness.jpg",
+      "image": "paw-harness.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "shop.product",
+    "fields": {
+      "sku": "pp5001730768",
+      "name": "Harness and Dog Collar",
+      "description": "Great deal for big dogs, body harness and collar with name engraved.",
+      "price": 15.00,
+      "category": 4,
+      "image_url": "/media/offer-1.jpg",
+      "image": "offer-1.jpg"
+    }
   }
 ]
