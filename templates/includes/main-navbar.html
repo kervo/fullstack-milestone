@@ -46,11 +46,11 @@
             Shop & Offers
             </a>
             <div class="dropdown-menu border-0 rounded-0" aria-labelledby="shop-offers">
-                <a href="" class="dropdown-item">Toys</a>
-                <a href="" class="dropdown-item">Food Treats</a>
-                <a href="" class="dropdown-item">Hygiene</a>
-                <a href="" class="dropdown-item">The Paw Clothing</a>
-                <a href="" class="dropdown-item">Offers!</a>
+                <a href="{% url 'products' %}?category=toys" class="dropdown-item">Toys</a>
+                <a href="{% url 'products' %}?category=treats" class="dropdown-item">Food Treats</a>
+                <a href="{% url 'products' %}?category=hygiene" class="dropdown-item">Hygiene</a>
+                <a href="{% url 'products' %}?category=paw_products" class="dropdown-item">The Paw Clothing</a>
+                <a href="{% url 'products' %}?category=offers" class="dropdown-item">Offers!</a>
             </div>
         </li>
     </ul>

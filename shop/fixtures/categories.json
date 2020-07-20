@@ -25,7 +25,7 @@
     "model": "shop.category",
     "fields": {
       "name": "paw_products",
-      "friendly_name": "The Paw Clothing"
+      "friendly_name": "The Paw Accessories"
     }},
     {
     "pk": 5,
