@@ -33,9 +33,16 @@ body {
     min-width: 260px;
 }
 
+.btn-outline-black {
+    background: #B05D44;
+    color: black;
+    min-width: 260px;
+}
+
 .btn-black {
-    background: black;
+    background: black !important;
     color: white;
+    border: 1px solid black;
 }
 
 .shop-now-button:hover,
