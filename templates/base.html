@@ -73,7 +73,7 @@
                     </div>
                 </li>
                 <li class="list-inline-item">
-                <a href="{% url 'view_bag' %}" class="{% if grand_total %}text-info font-weight-bold{% endif %} nav-link">
+                <a href="{% url 'view_bag' %}" class="{% if grand_total %}text-info font-weight-bold{% endif %} text-black nav-link">
                 <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
@@ -100,7 +100,7 @@
       </div>
       <div id="delivery-banner" class="row text-center">
           <div class="col bg-black text-white">
-              <h4 class="logo-font my-1">Quick trim from € {{ free_shipping_treshold }}</h4>
+              <h4 class="logo-font my-1">Free quick trim when you spend €{{ free_trim_treshold }} in our shop!</h4>
           </div>
       </div>
     </header>
