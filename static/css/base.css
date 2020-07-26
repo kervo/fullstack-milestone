@@ -10,6 +10,16 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+.paw-color {
+    background: #43042F;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #B05D44;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -24,12 +34,12 @@ body {
 }
 
 .main-logo-link {
-    width: fit-content;
+    max-width: 10vh;
 }
 
 .shop-now-button {
-    background: #B05D44;
-    color: white;
+    background: #43042F;
+    color: #B05D44;
     min-width: 260px;
 }
 
@@ -110,4 +120,7 @@ body {
     body {
         height: calc(80vh - 110px);
     }
+    .main-logo-link {
+    max-width: 10vh;
+}
 }

@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
     {% endblock %}
     {% block extra_css %}
     {% endblock %}
@@ -31,9 +33,7 @@
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
-            <h2 class="logo-font text-black my-0">The
-              <strong> Paw </strong>Society
-            </h2>
+            <img src="/media/paw-weblogo.png" alt="The Paw Society">
           </a>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -43,8 +43,8 @@
                 <!-- name q is for query  -->
                     <input type="text" name="q" class="form-control border border-black rounded-0" placeholder="Search our services!">
                     <div class="input-group-append">
-                        <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                            <span class="icon"><i class="fas fa-search"></i></span>
+                        <button class="form-control btn paw-color border border-black rounded-0" type="submit">
+                            <span class="icon text-white"><i class="fas fa-search"></i></span>
                         </button>
                     </div>
                 </div>
@@ -99,8 +99,8 @@
         </nav>
       </div>
       <div id="delivery-banner" class="row text-center">
-          <div class="col bg-black text-white">
-              <h4 class="logo-font my-1">Free quick trim when you spend €{{ free_trim_treshold }} in our shop!</h4>
+          <div class="col paw-color text-white">
+              <h4 class="logo-font my-1 text-white">Free quick trim when you spend €{{ free_trim_treshold }} in our shop!</h4>
           </div>
       </div>
     </header>
@@ -112,8 +112,5 @@
     {%endblock %}
     {% block postloadjs %}
     {% endblock %}
-    <footer>
-    <h5 class="text-white">Photos courtesy of PEXELS</h5>
-    </footer>
   </body>
 </html>
