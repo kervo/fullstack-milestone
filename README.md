@@ -27,5 +27,5 @@ Solution: I was using `{{ url 'product_detail' product.id }}` instead of `{% url
 
 
 # References
-* Photos: Pexel, Homepage: Photo by Helena Lopes from Pexels
+* Photos: Pexel, Homepage: Photo by Helena Lopes, Josh Hild from Pexels
 
