@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/frontcover.jpg') no-repeat center center fixed;
+    background: url('/media/home-img.jpg') no-repeat center top fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -38,14 +38,18 @@ a:focus {
 }
 
 .main-logo-link {
-    max-height: inherit;
+    max-height: auto;
 }
 
-.st0{fill:#410D2F;}
+.st0 {
+    fill:#410D2F;
+    }
 
-.st1{fill:#F3AF76;}
+.st1 {
+    fill:#F3AF76;
+    }
 
-.shop-now-button {
+.shop-now-button { 
     background: #43042F;
     color: white;
     min-width: 260px;
@@ -102,7 +106,6 @@ a:focus {
   .container {
     max-width: 80%;
   }
-
 }
 
 /* fixed top navbar only on medium and up */
