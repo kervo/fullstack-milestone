@@ -120,7 +120,4 @@ a:focus {
     body {
         height: calc(80vh - 110px);
     }
-    .main-logo-link {
-    max-width: 10vh;
-}
 }
