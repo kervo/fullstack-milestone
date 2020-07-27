@@ -102,13 +102,16 @@ a:focus {
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .container {
     max-width: 80%;
   }
+  .header-container {
+        padding-top: 325px;
+    }
 }
 
-/* fixed top navbar only on medium and up */
+/* fixed top navbar only on medium and up
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -119,9 +122,9 @@ a:focus {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: relative;
     }
-}
+} */
 
 /* fixed top of products and single_products */
 @media (max-width: 992px) {
