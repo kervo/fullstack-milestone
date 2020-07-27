@@ -14,6 +14,10 @@ body {
     background: #43042F;
 }
 
+.paw-text {
+    color: #43042F;
+}
+
 a:hover,
 a:active,
 a:focus {
@@ -97,6 +101,11 @@ a:focus {
     position: fixed;
     background: white;
     z-index: -1;
+}
+
+.remove-item,
+.update-link {
+    cursor: pointer;
 }
 
 /* -------------------------------- Media Queries */

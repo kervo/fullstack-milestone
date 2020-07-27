@@ -2,12 +2,12 @@ from django.shortcuts import render, redirect
 
 
 def view_bag(request):
-    """ shopping bag template """
+    # shopping bag template
     return render(request, 'bag/bag.html')
 
 
 def add_to_bag(request, item_id):
-    """ adding items to shopping bag """
+    # adding items to shopping bag
 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
