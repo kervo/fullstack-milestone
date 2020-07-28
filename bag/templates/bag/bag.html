@@ -101,10 +101,10 @@
                                         </span>
                                         <span class="text-uppercase">Go back</span>
                                     </a>
-                                    <a href="" class="btn paw-color rounded-0 btn-m">
-                                        <span class="text-uppercase">Secure Checkout</span>
+                                    <a href="" class="btn paw-color rounded-0 btn-lg">
+                                        <span class="text-uppercase text-white">Secure Checkout</span>
                                         <span class="icon">
-                                            <i class="fas fa-lock"></i>
+                                            <i class="fas fa-lock text-white"></i>
                                         </span>
                                     </a>
                                 </td>
@@ -141,7 +141,7 @@ $('.remove-item').click(function(e) {
     var url = `/bag/remove/${itemId}`;
     var data = {'csrfmiddlewaretoken': csrfToken};
 
-    $.post(url, data)
+    $(this).post(url, data)
     .done(function() {
         location.reload();
     });

@@ -154,8 +154,8 @@
                 <li class="list-inline-item dropdown">
                     <a href="#" class="text-black nav-link" id="user-page" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="text-center">
-                        <div><i class="fas fa-user fa-lg"></i></div>
-                        <p class="my-0">Paw profile</p>
+                        <div><i class="fas fa-paw fa-lg"></i></div>
+                        <p class="my-0">Paw Profile</p>
                     </div>
                     </a>
                     <div class="dropdown-menu border-0" aria-labelledby="user-page">
@@ -174,7 +174,7 @@
                 <li class="list-inline-item">
                 <a href="{% url 'view_bag' %}" class="{% if grand_total %}text-info font-weight-bold{% endif %} text-black nav-link">
                 <div class="text-center">
-                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                 <p class="my-0">
                 {% if grand_total %}
                     €{{ grand_total|floatformat:2 }}
