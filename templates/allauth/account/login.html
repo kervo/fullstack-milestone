@@ -4,7 +4,7 @@
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block head_title %}{% trans "Login" %}{% endblock %}
 
 {% block content %}
 
@@ -34,7 +34,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 {% endif %}
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
+<form class="login form-signin" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
   {{ form.as_p }}
   {% if redirect_field_value %}

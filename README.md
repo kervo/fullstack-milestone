@@ -25,6 +25,8 @@ Solution: I was using `{{ url 'product_detail' product.id }}` instead of `{% url
 
 * UnboundLocalError: local variable 'query' referenced before assignment. I was getting this error on my shop section because I wasn't declaring the value of `query` before the `if` statement.
 
+* TypeError: 'class Meta' got invalid attribute(s): name,friendly_name
+Solution: I was calling my attributes on a class model inside the model Meta, by indenting it a level up on the class, attributes were working.
 
 # References
 * Photos: Pexel, Homepage: Photo by Helena Lopes, Josh Hild from Pexels
