@@ -30,7 +30,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
     }
-    """ call the folder from shop > templates > ... """
+    # Call the folder from shop > templates > ...
     return render(request, 'products/products.html', context)
 
 
