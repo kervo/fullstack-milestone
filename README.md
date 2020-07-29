@@ -28,6 +28,14 @@ Solution: I was using `{{ url 'product_detail' product.id }}` instead of `{% url
 * TypeError: 'class Meta' got invalid attribute(s): name,friendly_name
 Solution: I was calling my attributes on a class model inside the model Meta, by indenting it a level up on the class, attributes were working.
 
+* 'bag_tools' is not a registered tag library. Must be one of
+Solution: Make sure that you create templetatags folder at the same level as templates folder, not inside it as they work together to general the subtotal of every item on the shopping page.
+
 # References
+## UX
 * Photos: Pexel, Homepage: Photo by Helena Lopes, Josh Hild from Pexels
+
+## Django
+
+* Template tags and custom filter  https://django.readthedocs.io/en/stable/howto/custom-template-tags.html
 
