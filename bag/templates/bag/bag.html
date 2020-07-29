@@ -47,7 +47,7 @@
                                         <p class="my-0">€{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-2 w-25">
-                                    <form class="form update-form" method="POST" action="">
+                                    <form class="update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                     {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group">
@@ -73,8 +73,8 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <a class="update-link paw-text" href="">Update</a>
-                                    <a class="remove-item text-danger float-right" id="remove_{{ item.ite_id }}" href=""><i class="fas fa-trash-alt"></i></a>
+                                    <a class="update-link paw-text">Update</a>
+                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" href=""><i class="fas fa-trash-alt"></i></a>
                                     </td>
                                     <td class="py-2">
                                         <p class="my-0">€{{ subtotal }}</p>
@@ -115,7 +115,7 @@
         <p class="lead mb-5">You haven't bought anything yet!</p>
         <a href="{% url 'products' %}" class="btn paw-color rounded-0 btn-sm">
         <span class="icon">
-        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-left text-white"></i>
         </span>
         <span class="text-uppercase text-white">Go Back</span>
         </a>
@@ -129,22 +129,23 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input.html' %}
 <script type="text/javascript">
-// update items on shopping bag
-$('.update-link').click(function(e) {
-    var form = $(this).prev('.update-form');
-    form.submit();
-})
-// delete items from shopping bag
-$('.remove-item').click(function(e) {
-    var csrfToken = "{{ csrf_token }}";
-    var itemId = $(this).attr('id').split('remove_')[1];
-    var url = `/bag/remove/${itemId}`;
-    var data = {'csrfmiddlewaretoken': csrfToken};
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
 
-    $(this).post(url, data)
-    .done(function() {
-        location.reload();
-    });
-})
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
 </script>
 {% endblock %}
