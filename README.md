@@ -13,6 +13,11 @@ Offers banner gives the opportunity to catch the user's attention with an attrac
 
 The main colour to give contrast to the site is `#B05D44` as in the company's logo. 
 
+# Technology Practices
+Every new app created with `python3 manage.py startapp _name_` has to be loaded into the settings.py file and run the following commands:
+`python3 manage.py makemigrations` and to apply this `python3 manage.py migrate`
+
+
 # Testing
 
 * remote: error: File core.Microsoft.Pytho.3919.1594814483 is 225.15 MB; this exceeds GitHub's file size limit of 100.00 MB
@@ -30,6 +35,12 @@ Solution: I was calling my attributes on a class model inside the model Meta, by
 
 * 'bag_tools' is not a registered tag library. Must be one of
 Solution: Make sure that you create templetatags folder at the same level as templates folder, not inside it as they work together to general the subtotal of every item on the shopping page.
+
+* ModuleNotFoundError: No module named 'products' (https://forum.freecodecamp.org/t/no-module-named-pages/280669)
+Solution: I was calling the folder withing the templates and no the app or module.
+
+* ImproperlyConfigured: Requested setting INSTALLED_APPS, but settings are not configured.
+Solution: Always register the field on the admin interface `admin.site.register(Voucher, VoucherAdmin)`
 
 # References
 ## UX
