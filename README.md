@@ -40,7 +40,7 @@ Solution: Make sure that you create templetatags folder at the same level as tem
 Solution: I was calling the folder withing the templates and no the app or module.
 
 * ImproperlyConfigured: Requested setting INSTALLED_APPS, but settings are not configured.
-Solution: Always register the field on the admin interface `admin.site.register(Voucher, VoucherAdmin)`
+Solution: Always register the fields on the admin interface `admin.site.register(Voucher, VoucherAdmin)`. I noticed this error by running `python3 manage.py check voucher`
 
 # References
 ## UX
