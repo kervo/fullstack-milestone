@@ -14,6 +14,9 @@ Offers banner gives the opportunity to catch the user's attention with an attrac
 The main colour to give contrast to the site is `#B05D44` as in the company's logo. 
 
 # Technology Practices
+
+`pip3 freeze > requirements.txt` to make sure all python packages are gathered together to make the app work.
+
 Every new app created with `python3 manage.py startapp _name_` has to be loaded into the settings.py file and run the following commands:
 `python3 manage.py makemigrations` and to apply this `python3 manage.py migrate`
 

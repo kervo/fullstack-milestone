@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'voucher',
+    # Boostrap templates attributes to forms
+    'crispy_forms',
 ]
 
 
@@ -60,6 +62,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'paw_soc.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -79,6 +83,10 @@ TEMPLATES = [
                 # to see shopping bag from all levels
                 'bag.contexts.bag_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
