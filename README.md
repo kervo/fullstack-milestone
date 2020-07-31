@@ -53,6 +53,7 @@ Solution: Always register the fields on the admin interface `admin.site.register
 
 * 'Settings' object has no attribute 'FREE_TRIM_THRESHOLD'
 Unsolved: After several attempts to I could make a calculation for the FREE_TRIM_TRESHOLD so it would send a number voucher to exchange for the free services.
+
 # References
 ## UX
 * Photos: Pexel, Homepage: Photo by Helena Lopes, Josh Hild from Pexels

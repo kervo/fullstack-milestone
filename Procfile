@@ -1,0 +1,1 @@
+web: gunicorn paw_soc.wsgi:application
