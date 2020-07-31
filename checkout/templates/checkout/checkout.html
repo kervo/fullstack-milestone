@@ -7,21 +7,24 @@
 {% endblock %}
 
 {% block page_header %}
-<div class="container">
-    <div class="row">
-        <div class="col"></div>
+    <div class="container header-container">
+        <div class="row">
+            <div class="col text-center">
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
     </div>
-</div>  
 {% endblock %}
+
 
 {% block content %}
 <div class="neutral-bg"></div>
 <div class="container mb-2">
     <div class="row">
-        <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4 text-center">Please fill up the fom below</h2>
-            <hr>
+        <div class="col mt-3">
+            <br />
+            <h2 class="logo-font mb-4 text-center">Please fill up the form below</h2>
+            <br />
         </div>
     </div>
     <div class="row">
@@ -36,7 +39,7 @@
             </div>
             {% for item in bag_items %}
                     <div class="row">
-                        <div class="col-2 mb-1">
+                        <div class="col-12 col-lg-4">
                         <!-- Use the name of the path on urls file, no the view name of def -->
                             <a href="{% url 'single_product' item.product.id %}">
                                 {% if item.product.image %}
@@ -56,20 +59,20 @@
                     </div>
                 {% endfor %}
             <hr>
-            <div class="row paw-text text-right">
-                <div class="col-7 offset-2">
+            <div class="row paw-text">
+                <div class="col-12 offset-2">
                     <p class="my-0">Order total:</p>
                     <p class="my-0">Delivery:</p>
                     <p class="my-0">Grand total:</p>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-4 text-right">
                     <p class="my-0">€{{ total | floatformat:2 }}</p>
                     <p class="my-0">€{{ delivery | floatformat:2 }}</p>
                     <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-8">
             <p class="paw-text">Complete your order:</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
             {% csrf_token %}
@@ -99,7 +102,7 @@
 							{% endif %}
 						</div>
             </fieldset>
-            <fieldset class="px-3">
+            <fieldset class="mr-2">
             <legend class="fieldset-label small text-mute px-2 w-auto">Payment</legend>
             <!-- STRIPE -->
             <div class="mb-3" id="card-element"></div>
