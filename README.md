@@ -1,4 +1,4 @@
-![The Paw Society](https://github.com/kervo/fullstack-milestone/blob/master/redme_files/homepage-proto.png "Homepage")
+![The Paw Society](readme_files/homepage-proto.png)
 
 Welcome to the Paw society,
 
