@@ -5,7 +5,7 @@ Welcome to the Paw society,
 This is the Code Institute student template for Gitpod to present my final project about full stack frameworks with Django.
 
 ## The Paw Society - Django fullstack project
-![The Paw Society](https://github.com/kervo/fullstack-milestone/blob/master/redme_files/wireframe.png "Wireframe")
+![The Paw Society](readme_files/wireframe.png)
 
 # UX-Desing
 
