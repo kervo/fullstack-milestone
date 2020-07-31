@@ -103,9 +103,11 @@ a:focus {
     z-index: -1;
 }
 
-.checkout-success {
-    background: url('/media/frontcover.jpg') no-repeat center top fixed;
-    background-size: cover;
+.success-bg {
+    background: #ADADAD;
+    background: -moz-linear-gradient(top, #ADADAD 0%, #E3E3E3 50%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #ADADAD 0%, #E3E3E3 50%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #ADADAD 0%, #E3E3E3 50%, #FFFFFF 100%);
 }
 
 .remove-item,

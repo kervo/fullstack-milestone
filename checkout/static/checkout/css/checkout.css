@@ -36,3 +36,10 @@
     color: #410D2F;
     border: 1px solid #222;
 }
+
+.success-bg {
+    background: #ADADAD;
+    background: -moz-linear-gradient(top, #ADADAD 0%, #E3E3E3 50%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #ADADAD 0%, #E3E3E3 50%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #ADADAD 0%, #E3E3E3 50%, #FFFFFF 100%);
+}
