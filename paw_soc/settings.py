@@ -80,6 +80,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # Access media images for all apps
+                'django.template.context_processors.media',
                 # to see shopping bag from all levels
                 'bag.contexts.bag_contents',
             ],
