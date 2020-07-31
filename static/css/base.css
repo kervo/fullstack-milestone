@@ -103,6 +103,11 @@ a:focus {
     z-index: -1;
 }
 
+.checkout-success {
+    background: url('/media/frontcover.jpg') no-repeat center top fixed;
+    background-size: cover;
+}
+
 .remove-item,
 .update-link {
     cursor: pointer;
