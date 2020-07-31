@@ -53,3 +53,5 @@ Solution: Always register the fields on the admin interface `admin.site.register
 
 * Template tags and custom filter  https://django.readthedocs.io/en/stable/howto/custom-template-tags.html
 
+* Working with Bootstrap built-in security forms https://pypi.org/project/django-crispy-forms/
+
