@@ -139,6 +139,37 @@
         </div>
     </div>
 </div>
+<div class="row ml-3">
+        <div class="col-12 col-lg-7">
+            <div class="row">
+                <div class="col paw-text">Billing Info</div>
+            </div>
+        </div>
+    </div>
+    <div class="row ml-3">
+        <div class="col-12 col-md-4">
+                <p class="small mb-0 paw-text font-weight-bold">Subtotal</p>
+        </div>
+        <div class="col-12 col-md-4">
+                <p class="mb-0">{{ order.order_total }}</p>
+        </div>
+    </div>
+    <div class="row ml-3">
+        <div class="col-12 col-md-4">
+                <p class="small mb-0 paw-text font-weight-bold">Delivery</p>
+        </div>
+        <div class="col-12 col-md-4">
+                <p class="mb-0">{{ order.delivery_cost }}</p>
+        </div>
+    </div>
+    <div class="row ml-3">
+        <div class="col-12 col-md-4">
+                <p class="small mb-0 paw-text font-weight-bold">Total</p>
+        </div>
+        <div class="col-12 col-md-4">
+                <p class="mb-0">{{ order.grand_total }}</p>
+        </div>
+    </div>
 <div class="row">
         <div class="col-sm-4 col-lg-8 float-left">
         <a href="{% url 'products' %}?category=offers" class="btn paw-color rounded-0 my-2 text-white">
