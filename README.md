@@ -51,6 +51,8 @@ Solution: I was calling the folder withing the templates and no the app or modul
 * ImproperlyConfigured: Requested setting INSTALLED_APPS, but settings are not configured.
 Solution: Always register the fields on the admin interface `admin.site.register(Voucher, VoucherAdmin)`. I noticed this error by running `python3 manage.py check voucher`
 
+* 'Settings' object has no attribute 'FREE_TRIM_THRESHOLD'
+Unsolved: After several attempts to I could make a calculation for the FREE_TRIM_TRESHOLD so it would send a number voucher to exchange for the free services.
 # References
 ## UX
 * Photos: Pexel, Homepage: Photo by Helena Lopes, Josh Hild from Pexels

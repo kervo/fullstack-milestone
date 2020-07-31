@@ -5,7 +5,7 @@ from django.db.models import Sum
 from django.conf import settings
 # call the app no te templates folder
 from shop.models import Product
-from voucher.models import Voucher
+#  from voucher.models import Voucher
 
 
 class Order(models.Model):
@@ -38,11 +38,12 @@ class Order(models.Model):
         """
         Update grand total each time a line item is added
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
-        if self.order_total > settings.FREE_TRIM_THRESHOLD:
-            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
-            models.ForeignKey(Voucher)
-        else:
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        #  if self.order_total > settings.FREE_TRIM_THRESHOLD:
+        #    self.trim_voucher = self.order_total * settings.FREE_TRIM_THRESHOLD
+        #  
+
+        if self.order_total:
             self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
 
     def save(self, *args, **kwargs):

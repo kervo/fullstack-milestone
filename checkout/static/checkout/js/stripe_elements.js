@@ -43,6 +43,7 @@ var form = document.getElementById("payment-form");
 form.addEventListener("submit", function (ev) {
   ev.preventDefault();
   card.update({ disable: true });
+  // Overwrites submit button
   $("#submit-button").attr("disable", true);
   stripe
     .confirmCardPayment(clientSecret, {
@@ -67,7 +68,7 @@ form.addEventListener("submit", function (ev) {
         $("#submit-button").attr("disable", false);
       } else {
         if (result.paymentIntent.status === "succeeded") {
-          form.onsubmit();
+          form.submit();
         }
       }
     });
