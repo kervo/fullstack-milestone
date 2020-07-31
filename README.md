@@ -20,6 +20,12 @@ The main colour to give contrast to the site is `#B05D44` as in the company's lo
 Every new app created with `python3 manage.py startapp _name_` has to be loaded into the settings.py file and run the following commands:
 `python3 manage.py makemigrations` and to apply this `python3 manage.py migrate`
 
+### Payment methods
+To ensure our passwords are kept only in virtual environment, we need to add on the CLI `export STRIPE_SECRET_KEY=£$%%^&BGG`. Not very handy as you need to upload them on the CLI evrytime.
+
+* https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details
+Implement neccessary javascript statements on stripe_elementns.json
+
 
 # Testing
 
