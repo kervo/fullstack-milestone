@@ -60,12 +60,12 @@
                 {% endfor %}
             <hr>
             <div class="row paw-text">
-                <div class="col-12 offset-2">
+                <div class="col-7 offset-2">
                     <p class="my-0">Order total:</p>
                     <p class="my-0">Delivery:</p>
                     <p class="my-0">Grand total:</p>
                 </div>
-                <div class="col-12 col-lg-4 text-right">
+                <div class="col-3 text-right">
                     <p class="my-0">€{{ total | floatformat:2 }}</p>
                     <p class="my-0">€{{ delivery | floatformat:2 }}</p>
                     <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
@@ -110,7 +110,7 @@
             <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
             </fieldset>
             <div class="submit-button mt-5 mb-2 text-left">
-                <a href="{% url 'view_bag' %}" class="btn rounded-0 text-white shop-now-button">
+                <a href="{% url 'view_bag' %}" class="btn-outline-black btn rounded-0 text-white">
                 <span class="icon"><i class="fas fa-chevron-left"></i></span>
                 <span class="font-weight-bold">Change your order</span>
                 </a>
