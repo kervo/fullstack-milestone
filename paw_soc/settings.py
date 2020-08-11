@@ -33,7 +33,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'fa5m49!0(k9&dyyjrqs+@$=p*t=i&#n1$f+6c%+$7eljcpiwb+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['pawsociety.herokuapp.com']
 
