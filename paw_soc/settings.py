@@ -121,7 +121,7 @@ WSGI_APPLICATION = 'paw_soc.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases<<<<<<< HEAD
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse('postgres://mpmbghnchvcxpa:6f817bee38ac40cbe045fe1fbe995fd629755da6fc28f3c49aff25f1a38388e5@ec2-54-247-118-139.eu-west-1.compute.amazonaws.com:5432/d2nnr5l6vqjvn8')
     }
 else:
     DATABASES = {
@@ -129,19 +129,6 @@ else:
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
-    }
-=======
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
-    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
->>>>>>> refs/remotes/origin/master
     }
 
 # Password validation
