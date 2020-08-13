@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'voucher',
     # Boostrap templates attributes to forms
     'crispy_forms',
+    'storages',
 ]
 
 
@@ -130,7 +131,7 @@ WSGI_APPLICATION = 'paw_soc.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases<<<<<<< HEAD
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse('postgres://mpmbghnchvcxpa:6f817bee38ac40cbe045fe1fbe995fd629755da6fc28f3c49aff25f1a38388e5@ec2-54-247-118-139.eu-west-1.compute.amazonaws.com:5432/d2nnr5l6vqjvn8')
+        'default': dj_database_url.parse('DATABASE_URL')
     }
 else:
     DATABASES = {
@@ -181,6 +182,13 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+if 'USE_AWS' in os.environ:
+    AWS_STORAGE_BUCKET_NAME = 'pawsociety'
+    AWS_S3_REGION_NAME = 'us-east-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY_ID = os.environ.get('AWS_SECRET_ACCESS_KEY_ID')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
 #  STRIPE
 FREE_TRIM_TRESHOLD = 50
