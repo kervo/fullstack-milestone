@@ -1,3 +1,5 @@
+Deployed project: https://pawsociety.herokuapp.com/
+
 ![The Paw Society](readme_files/homepage-proto.png)
 
 Welcome to the Paw society,
